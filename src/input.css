@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    padding-top: 460px;
+}
+
+.bg-card-color{
+    background-color: #212121;
+}
+
+.desc-color{
+    color: #BBDEFB;
+}
+
+.price-color{
+    color: #fff;
+}
+
