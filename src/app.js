@@ -66,6 +66,43 @@ const restaurants = [
 ];
 
 
+let loginForm = document.querySelector('#login-form');
+let form = document.querySelector('.form');
+let closeForm = document.querySelector('.close-form');
+
+let signIn = document.querySelector('#signin');
+let signupform = document.querySelector('.signupform');
+let closeSignUpForm = document.querySelector('.closeSignUp-form')
+
+let redirectLoginForm = document.querySelector('#go-to-login-form')
+let redirectSignupForm = document.querySelector('#go-to-signup-form')
+
+loginForm.addEventListener('click', function(){
+    form.classList.remove('hidden');
+})
+
+closeForm.addEventListener('click', function(){
+    form.classList.add('hidden');
+})
+
+signIn.addEventListener('click', function(){
+    signupform.classList.remove('hidden');
+})
+
+closeSignUpForm.addEventListener('click', function(){
+    signupform.classList.add('hidden');
+})
+
+redirectLoginForm.addEventListener('click', function(){
+    form.classList.remove('hidden');
+    signupform.classList.add('hidden');
+})
+
+redirectSignupForm.addEventListener('click', function(){
+    signupform.classList.remove('hidden');
+    form.classList.add('hidden');
+})
+
 function orderOnlin(){
 
     let orderOnline = document.querySelectorAll('.order-card');
@@ -135,10 +172,30 @@ restaurants.map((restaurant, index) => {
             place.textContent = `Place: ${restaurant.place}`;
         }
 })
-
+    
 
 }
 
 orderOnlin()
+
+
+window.addEventListener('scroll', function(){
+    let container = document.querySelector('.container')
+    let floatingSearch = document.querySelector('.floating-search');
+    
+    if(!floatingSearch){
+        floatingSearch = document.createElement('input')
+        floatingSearch.classList.add('floating-search')
+        floatingSearch.placeholder = "Search your favourite food and Restaurant";
+        container.appendChild(floatingSearch)
+    }
+
+    if(window.scrollY > 460){
+        floatingSearch.style.display = 'block';
+    } else {
+        floatingSearch.style.display = 'none';
+    }
+
+})
 
 
