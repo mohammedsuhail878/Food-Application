@@ -103,7 +103,7 @@ redirectSignupForm.addEventListener('click', function(){
     form.classList.add('hidden');
 })
 
-function orderOnlin(){
+function renderingData(){
 
     let orderOnline = document.querySelectorAll('.order-card');
     let outletCard = document.querySelectorAll('.outlet-card');
@@ -124,21 +124,15 @@ foodItems.map((foodItem, index) => {
             price.textContent = `Price: ${foodItem.price}`;
     
     }
-        const foodType = orderOnline[index].querySelector('.food-type')
+        const foodTypeIndicator = orderOnline[index].querySelector('.food-type')
         let span = document.createElement('span')
         span.style.height = '12px'
         span.style.width = '12px'
         span.style.borderRadius = '50%'
 
-    // if(foodItem.type === 'veg'){        
-    //     span.style.backgroundColor = 'green'
-    // } else {
-    //     span.style.backgroundColor = 'red'
-    // }
-
     foodItem.type === 'veg' ? span.style.backgroundColor = 'green' : span.style.backgroundColor = 'red'
 
-    foodType.appendChild(span)
+    foodTypeIndicator.appendChild(span)
 })
 
 outlets.map((outlet, index) => {
@@ -171,13 +165,9 @@ restaurants.map((restaurant, index) => {
             desc.textContent = restaurant.desc;
             place.textContent = `Place: ${restaurant.place}`;
         }
-})
-    
-
+    })
 }
-
-orderOnlin()
-
+renderingData()
 
 window.addEventListener('scroll', function(){
     let container = document.querySelector('.container')
