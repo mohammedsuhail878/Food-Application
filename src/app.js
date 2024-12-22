@@ -66,41 +66,49 @@ const restaurants = [
 ];
 
 
-let loginForm = document.querySelector('#login-form');
-let form = document.querySelector('.form');
+let login = document.querySelector('#login');
+let loginForm = document.querySelector('.loginForm');
 let closeForm = document.querySelector('.close-form');
 
 let signIn = document.querySelector('#signin');
-let signupform = document.querySelector('.signupform');
+let signUpForm = document.querySelector('.signUpForm');
 let closeSignUpForm = document.querySelector('.closeSignUp-form')
 
 let redirectLoginForm = document.querySelector('#go-to-login-form')
 let redirectSignupForm = document.querySelector('#go-to-signup-form')
 
-loginForm.addEventListener('click', function(){
-    form.classList.remove('hidden');
-})
-
-closeForm.addEventListener('click', function(){
-    form.classList.add('hidden');
+login.addEventListener('click', function(){
+    signUpForm.classList.add('hidden');
 })
 
 signIn.addEventListener('click', function(){
-    signupform.classList.remove('hidden');
+    loginForm.classList.add('hidden');
+})
+
+login.addEventListener('click', function(){
+    loginForm.classList.remove('hidden');
+})
+
+closeForm.addEventListener('click', function(){
+    loginForm.classList.add('hidden');
+})
+
+signIn.addEventListener('click', function(){
+    signUpForm.classList.remove('hidden');
 })
 
 closeSignUpForm.addEventListener('click', function(){
-    signupform.classList.add('hidden');
+    signUpForm.classList.add('hidden');
 })
 
 redirectLoginForm.addEventListener('click', function(){
-    form.classList.remove('hidden');
-    signupform.classList.add('hidden');
+    loginForm.classList.remove('hidden');
+    signUpForm.classList.add('hidden');
 })
 
 redirectSignupForm.addEventListener('click', function(){
-    signupform.classList.remove('hidden');
-    form.classList.add('hidden');
+    signUpForm.classList.remove('hidden');
+    loginForm.classList.add('hidden');
 })
 
 function renderingData(){
