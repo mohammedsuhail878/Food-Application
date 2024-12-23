@@ -4,6 +4,7 @@
 
 body{
     padding-top: 560px;
+    overflow-x: hidden;
 }
 
 .bg-card-color{

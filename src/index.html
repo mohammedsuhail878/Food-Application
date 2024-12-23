@@ -19,44 +19,45 @@
                 <button id="login" class="text-3xl rounded-lg">Log In</button>
                 <button id="signin" class="text-3xl rounded-lg">Sign In</button>
             </div>
-            <h1 class="absolute text-5xl text-white font-bold bottom-[280px] left-[45%]">Food Application</h1>
-            <h1 class="absolute text-5xl text-white bottom-[200px] left-[25%]">Discover the best food & drinks in Bengaluru</h1>
-            <input id="search-items" type="text" class="w-[990px] h-20 border-none border-slate-400 absolute translate-x-96  -translate-y-44 rounded-lg 
-            focus:outline-none focus:border-blue-500 focus:ring-slate-100 bg-white opacity-75 text-center text-3xl" placeholder="Search your favourite food and Restaurant">
-            
+            <div class="banner-text">
+                <h1 class="absolute text-5xl text-white font-bold bottom-[280px] left-[520px]">Food Application</h1>
+                <h1 class="absolute text-5xl text-white bottom-[200px] left-52">Discover the best food & drinks in Bengaluru</h1>
+                <input id="search-items" type="text" class="w-[990px] h-20 border-none border-slate-400 absolute translate-x-48 -translate-y-44 rounded-lg 
+                focus:outline-none focus:border-blue-500 focus:ring-slate-100 bg-white opacity-75 text-center text-3xl" placeholder="Search your favourite food and Restaurant">
+           </div>
             <!-- LogIn Form -->
-            <div class="loginForm hidden absolute w-[560px] h-[520px] pb-3 rounded-xl translate-x-[105%] -translate-y-[550px] bg-[#212121f1] text-[#BBDEFB]">
+            <div class="loginForm hidden absolute w-[400px] h-[400px] pb-3 rounded-xl translate-x-[130%] -translate-y-[480px] bg-[#212121f1] text-[#BBDEFB]">
                 <div class="mx-5 mt-5 mb-5 text-2xl font-bold text-white flex justify-between">
                     <p>Login</p>
-                    <img src="/assets/x-solid.svg" class="close-form w-4 cursor-pointer" alt=""> 
+                    <img src="/assets/x-solid.svg" class="closeLogin-form w-4 cursor-pointer" alt=""> 
                 </div>
                 <div class="text-center ">
-                <input type="text" class="w-[500px] h-16  mt-3 mb-3 text-3xl text-black text-left pl-3 rounded-[8px] focus:outline-none focus:border-slate-800 focus:ring-4" placeholder="Phone Number">
-                <button class="w-[500px] mb-3 h-16 bg-pink-500 text-3xl rounded-[8px]">Send One Time Password</button>
-                <p class="mb-3">--------------------------------- or --------------------------------</p>
-                <button class="w-[500px] mb-3 h-16 bg-white text-black text-3xl rounded-[8px]">Continue with Email</button>
-                <button class="w-[500px] mb-3 h-16 bg-white text-black text-3xl rounded-[8px]">Sign In with Google</button>
-                <p class="text-2xl pl-3 text-left mt-3">New to Food Application? <span id="go-to-signup-form" class="text-red-500 hover:underline cursor-pointer">Create account</span></p>
+                <input type="text" class="w-[340px] h-12  mt-3 mb-3 text-1xl text-black text-left pl-3 rounded-[8px] focus:outline-none focus:border-slate-800 focus:ring-4" placeholder="Phone Number">
+                <button class="w-[340px] mb-3 h-12 bg-pink-500 text-1xl rounded-[8px]">Send One Time Password</button>
+                <p class="mb-3">---------------------------- or --------------------------</p>
+                <button class="w-[340px] mb-3 h-12 bg-white text-black text-1xl rounded-[8px]">Continue with Email</button>
+                <button class="w-[340px] mb-3 h-12 bg-white text-black text-1xl rounded-[8px]">Sign In with Google</button>
+                <p class="text-1xl pl-3 text-left mt-1">New to Food Application? <span id="go-to-signup-form" class="text-red-500 hover:underline cursor-pointer">Create account</span></p>
             </div>
             </div>
             
              <!-- Signup Form -->
-            <div class="signUpForm hidden absolute w-[460px] h-[540px] rounded-xl translate-x-[135%] -translate-y-[550px] bg-[#212121f1] text-[#BBDEFB] z-10">
+            <div class="signUpForm hidden absolute w-[400px] h-[470px] rounded-xl translate-x-[130%] -translate-y-[500px] bg-[#212121f1] text-[#BBDEFB] z-10">
                 <div class="mx-5 mt-5 mb-5 text-2xl font-bold text-white flex justify-between">
                     <p>Sign up</p>
                     <img src="/assets/x-solid.svg" class="closeSignUp-form w-4 cursor-pointer" alt=""> 
                 </div>
                 <div class="text-center ">
-                <input type="text" class="w-[420px] h-16  mt-3 mb-3 text-2xl text-black text-left pl-2 rounded-[8px] focus:outline-none focus:border-slate-800 focus:ring-4" placeholder="Full Name">
-                <input type="text" class="w-[420px] h-16  mt-3 mb-3 text-2xl text-black text-left pl-2 rounded-[8px] focus:outline-none focus:border-slate-800 focus:ring-4" placeholder="Email">
+                <input type="text" class="w-[320px] h-12  mt-3 mb-3 text-1xl text-black text-left pl-2 rounded-[8px] focus:outline-none focus:border-slate-800 focus:ring-4" placeholder="Full Name">
+                <input type="text" class="w-[320px] h-12  mt-3 mb-3 text-1xl text-black text-left pl-2 rounded-[8px] focus:outline-none focus:border-slate-800 focus:ring-4" placeholder="Email">
                 <div class="pl-2 flex items-center gap-2">
                     <input type="checkbox">
                     <p class="mb-3 text-left">I agree to Food Aplication's <span class="text-red-500">Term of service. Privacy Policy </span> and <span class="text-red-500">content Policies.</span></p>
                 </div>
-                <button class="w-[420px] mb-3 h-16 bg-pink-500 text-2xl rounded-[8px]">Create Account</button>
+                <button class="w-[320px] mb-3 h-12 bg-pink-500 text-1xl rounded-[8px]">Create Account</button>
                 <p class="mb-3">--------------------------- or -------------------------</p>
-                <button class="w-[420px] mb-3 h-16 bg-white text-black text-2xl rounded-[8px]">Sign In with Google</button>
-                <p class="text-left text-2xl pl-4">Already have an account?<span id="go-to-login-form"  class="text-red-500 hover:underline cursor-pointer"> Log In</span></p>
+                <button class="w-[320px] mb-3 h-12 bg-white text-black text-1xl rounded-[8px]">Sign In with Google</button>
+                <p class="text-left text-1xl pl-4">Already have an account?<span id="go-to-login-form"  class="text-red-500 hover:underline cursor-pointer"> Log In</span></p>
                 </div>
             </div>
         </div>
@@ -66,9 +67,9 @@
     <!-- content section start -->
     <section class="bg-card-color pt-8 pb-8">
 
-        <h1 class="text-5xl text-white font-bold w-[320px] mx-60 mb-6">Order Online</h1>
+        <h1 class="text-5xl text-white font-bold w-[320px] mx-40 mb-6">Order Online</h1>
 
-        <div class="card-box ml-60 flex gap-6">
+        <div class="card-box ml-32 flex gap-6">
 
             <div class="order-card  border border-neutral-500 w-[360px] rounded-t-lg rounded-b-lg transform transition-transform duration-300 hover:scale-105 cursor-pointer">
                 <img src="/assets/food-banner.avif" class="img rounded-t-lg" alt="">
@@ -99,9 +100,9 @@
 
         </div>
     
-        <h1 class="text-5xl text-white font-bold w-48 mx-60 mt-6">Outlet</h1>
+        <h1 class="text-5xl text-white font-bold w-48 mx-40 mt-6">Outlet</h1>
 
-        <div class="card-box mt-8 ml-60 flex gap-6">
+        <div class="card-box mt-8 ml-32 flex gap-6">
 
             <div class="outlet-card border border-neutral-500 w-[360px] rounded-t-lg rounded-b-lg transform transition-transform duration-300 hover:scale-105 cursor-pointer">
                 <img src="/assets/food-banner.avif" class="outlet-img rounded-t-lg" alt="">
@@ -126,9 +127,9 @@
 
         </div>
 
-        <h1 class="text-5xl text-white font-bold w-48 mx-60 mt-6">Restaurant</h1>
+        <h1 class="text-5xl text-white font-bold w-48 mx-40 mt-6">Restaurant</h1>
 
-        <div class="card-box mt-8 ml-60 flex gap-6">
+        <div class="card-box mt-8 ml-32 flex gap-6">
 
             <div  class="restaurant-card border border-neutral-500 w-[360px] rounded-t-lg rounded-b-lg transform transition-transform duration-300 hover:scale-105 cursor-pointer">
                 <img src="/assets/food-banner.avif" class="restaurant-img rounded-t-lg" alt="">

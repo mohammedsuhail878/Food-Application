@@ -68,7 +68,7 @@ const restaurants = [
 
 let login = document.querySelector('#login');
 let loginForm = document.querySelector('.loginForm');
-let closeForm = document.querySelector('.close-form');
+let closeLoginForm = document.querySelector('.closeLogin-form');
 
 let signIn = document.querySelector('#signin');
 let signUpForm = document.querySelector('.signUpForm');
@@ -76,6 +76,8 @@ let closeSignUpForm = document.querySelector('.closeSignUp-form')
 
 let redirectLoginForm = document.querySelector('#go-to-login-form')
 let redirectSignupForm = document.querySelector('#go-to-signup-form')
+
+let bannerText = document.querySelector('.banner-text')
 
 login.addEventListener('click', function(){
     signUpForm.classList.add('hidden');
@@ -87,18 +89,22 @@ signIn.addEventListener('click', function(){
 
 login.addEventListener('click', function(){
     loginForm.classList.remove('hidden');
+    bannerText.classList.add('hidden');
 })
 
-closeForm.addEventListener('click', function(){
+closeLoginForm.addEventListener('click', function(){
     loginForm.classList.add('hidden');
+    bannerText.classList.remove('hidden');
 })
 
 signIn.addEventListener('click', function(){
     signUpForm.classList.remove('hidden');
+    bannerText.classList.add('hidden');
 })
 
 closeSignUpForm.addEventListener('click', function(){
     signUpForm.classList.add('hidden');
+    bannerText.classList.remove('hidden');
 })
 
 redirectLoginForm.addEventListener('click', function(){
